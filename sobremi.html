@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Alexz</title>
+    <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1d1d1f;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 80px 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Encabezado */
+        h1 {
+            font-size: clamp(2.2rem, 7vw, 3rem);
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        h1 span {
+            color: #6e6e73; /* Color gris para el alias */
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .role {
+            font-size: 1.5rem;
+            color: #0071e3; /* Azul profesional */
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        /* Sección Sobre mí */
+        .about-header {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #d2d2d7;
+            margin-bottom: 40px;
+        }
+
+        /* Cuerpo del texto */
+        .content p {
+            font-size: 1.15rem;
+            color: #424245;
+            margin-bottom: 28px;
+            text-align: justify; /* Justificado como en la imagen */
+        }
+
+        .content strong {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .content em {
+            font-style: italic;
+        }
+
+        /* Botón de volver */
+        .back-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .back-link {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Ajustes para Android/Móvil */
+        @media (max-width: 480px) {
+            body {
+                padding: 50px 20px;
+            }
+            .content p {
+                text-align: left; /* En móvil se lee mejor a la izquierda */
+                font-size: 1.1rem;
+            }
+            .role {
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h1>¡Hola! Soy Alexz <span>(alexzdev)</span></h1>
+        <p class="role">Desarrollador de Software</p>
+
+        <section>
+            <h2 class="about-header">Sobre mí</h2>
+            <hr>
+            
+            <div class="content">
+                <p>
+                    Soy un desarrollador de software con más de 5 años de experiencia especializado en la creación de sistemas 
+                    escalables y sincronizados. Mi enfoque principal ha sido en el desarrollo de complementos para servidores de 
+                    <em>Minecraft</em>, utilizando lenguajes como <strong>Java</strong> y <strong>Kotlin</strong>.
+                </p>
+
+                <p>
+                    He trabajado con bases de datos relacionales (MySQL y PostgreSQL) y no relacionales (MongoDB), así como la 
+                    implementación de sistemas de mensajería y sincronización de datos en tiempo real mediante <strong>Redis</strong>.
+                </p>
+
+                <p>
+                    Además, tengo experiencia en el desarrollo de aplicaciones web, utilizando frameworks como React, NextJS, o 
+                    ExpressJS. Aunque también estoy adentrándome más en el desarrollo <em>backend</em> con <strong>GoLang</strong>.
+                </p>
+            </div>
+
+            <div class="back-container">
+                <a href="index.html" class="back-link">← Volver al inicio</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
