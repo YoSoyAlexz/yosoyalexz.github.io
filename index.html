@@ -3,37 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comienzo | AlexzDev</title>
+    <title>Alexz | Desarrollador de Software</title>
     <style>
+        /* Reset de estilos para consistencia */
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #ffffff; /* Un tono oscuro más moderno */
-            color: #000000;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1d1d1f;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 80px 24px;
             text-align: center;
         }
 
+        /* Encabezado Principal */
         h1 {
-            /* El tamaño se ajusta según la pantalla: 
-               Mínimo 2rem, máximo 8rem */
-            font-size: clamp(2rem, 10vw, 6rem);
-            font-weight: 800;
-            letter-spacing: -2px;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .name-highlight {
+            color: #0071e3; /* Azul profesional de la imagen */
+        }
+
+        .role {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: #86868b;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #424245;
+            max-width: 600px;
+            margin: 0 auto 48px;
+            line-height: 1.6;
+        }
+
+        /* Botones */
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 120px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 980px; /* Bordes muy redondeados como en la captura */
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-blue {
+            background-color: #0071e3;
+            color: #ffffff;
+        }
+
+        .btn-gray {
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            border: 1px solid #d2d2d7;
+        }
+
+        .btn-gray i {
+            font-style: italic;
+            font-family: serif;
+        }
+
+        /* Sección de Proyectos */
+        .projects-section {
+            width: 100%;
+            padding: 60px 24px;
+            border-top: 1px solid #d2d2d7;
+            text-align: center;
+        }
+
+        .projects-section h2 {
+            font-size: clamp(2rem, 6vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .projects-section p {
+            font-size: 1.2rem;
+            color: #86868b;
+        }
+
+        /* Ajustes para móviles (Android) */
+        @media (max-width: 480px) {
+            .actions {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1 align="center">Hola 👋, soy Alexz</h1>
-    <h3 align="center">Un chico al que le encanta programar.</h3>  
+
+    <main class="container">
+        <section>
+            <h1>Hola, soy <span class="name-highlight">Alexz</span></h1>
+            <p class="role">Desarrollador de Software</p>
+            
+            <p class="description">
+                Desarrollador con más de 5 años de experiencia en la creación de 
+                sistemas escalables y sincronizados. Recientemente apasionado 
+                por el desarrollo web.
+            </p>
+
+            <div class="actions">
+                <a href="#" class="btn btn-blue">Conóceme más</a>
+                <a href="#" class="btn btn-gray"><i>day-to-day</i> de mi TFG</a>
+            </div>
+        </section>
+    </main>
+
+    <section class="projects-section">
+        <h2>Proyectos Destacados</h2>
+        <p>Una selección de mis trabajos más recientes</p>
+    </section>
+
 </body>
 </html>
-
